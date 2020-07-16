@@ -20,7 +20,7 @@
                 <ul class="navbar-nav">
                     {%for departure in departures %}
                     <li class="nav-item active">
-                        <a class="nav-link" href="/departures/{{ departure }}"> {{ departures[departure] }}</a>
+                        <a class="nav-link" href="{{ url_for('show_departure', departure=departure) }}"> {{ departures[departure] }}</a>
                     </li>
                     {% endfor %}
                 </ul>
